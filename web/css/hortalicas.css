@@ -1,0 +1,19 @@
+/* intro-horatalicas */
+
+.bg-intro-hortalicas {
+    max-width: 100%;
+    height: 221px   ;
+    background: url("../img/aba-hortalica/bg-intro-hortalica/bg-intro-hortalicas.jpg");
+    background-size: cover;
+    display: flex;
+}
+
+.init-cont-hort p {
+    display: flex;
+    text-align: center;
+    max-width: 619px;
+    margin: 0 auto;
+    margin-top: 60px;
+    font-size: 1.2em;
+    flex-wrap: nowrap;
+}

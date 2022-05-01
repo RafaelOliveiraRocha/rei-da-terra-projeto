@@ -1,0 +1,92 @@
+.modal-container {
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-container.ativo {
+    display: flex;
+}
+
+.modal {
+    background: white;
+    padding: 40px;
+    border: 10px solid #f37930;
+    box-shadow: 0 0 7px 10px white;
+    position: relative;
+}
+
+@keyframes modalshow {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -30px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0,);
+    }
+}
+
+.ativo .modal {
+    animation: modalshow .5s forwards;
+}
+
+.fechar-modal {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid white;
+    top: -30px;
+    right: -30px;
+    position: absolute;
+    background: #183c1d;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0.4);
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+}
+
+.fechar-modal:hover {
+    background: red;
+}
+
+.modal label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    display: block;
+    margin: 1rem 0 .5rem 0;
+}
+
+.modal input {
+    width: 100%;
+    padding: .7rem .5rem;
+    box-sizing: border-box;
+    border: 2px solid #000;
+}
+
+.modal button[type="submit"] {
+    display: block;
+    background: #5c2c0b;
+    border: none;
+    border-radius: 10px;
+    padding: .7rem 2rem;
+    font-size: 1.1rem;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.modal button[type="submit"]:hover {
+    background: #6dbe42;
+}

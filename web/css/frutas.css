@@ -1,0 +1,9 @@
+/* intro-frutas */
+
+.bg-intro-frutas {
+    max-width: 100%;
+    height: 221px   ;
+    background: url("../img/aba-frutas/bg-intro-frutas/bg-intro-frutas.jpg");
+    background-size: cover;
+    display: flex;
+}

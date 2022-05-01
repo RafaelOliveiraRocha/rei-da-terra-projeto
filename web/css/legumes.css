@@ -1,0 +1,9 @@
+/* intro-lgumes */
+
+.bg-intro-legumes {
+    max-width: 100%;
+    height: 221px   ;
+    background: url("../img/aba-legumes/bg-intro/bg-intro-legumes\ 1.jpg");
+    background-size: cover;
+    display: flex;
+}
